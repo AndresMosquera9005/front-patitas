@@ -8,6 +8,9 @@ WORKDIR /home/app
 COPY package*.json ./
 RUN npm install
 
+# Instala Angular CLI globalmente 
+ RUN npm install -g @angular/cli
+
 #Copia el resto de los archivos de la aplicación
 COPY . .
 
@@ -15,4 +18,4 @@ COPY . .
 EXPOSE 4200
 
 #Comando para ejecutar la aplicación cuando se inicie el contenedor
-CMD ["ng server -o", "/home/app/src/index.html"]
+CMD ["ng", "serve", "--host", "0.0.0.0"]
