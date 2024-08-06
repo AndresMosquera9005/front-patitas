@@ -9,7 +9,7 @@ COPY package*.json ./
 RUN npm install
 
 # Instala Angular CLI globalmente 
- RUN npm install -g @angular/cli
+RUN npm install -g @angular/cli
 
 #Copia el resto de los archivos de la aplicación
 COPY . .
