@@ -15,4 +15,4 @@ COPY . .
 EXPOSE 4200
 
 #Comando para ejecutar la aplicación cuando se inicie el contenedor
-CMD ["node", "/home/app/index.js"]
+CMD ["ng server -o", "/home/app/src/index.html"]
