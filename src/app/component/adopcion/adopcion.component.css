@@ -6,6 +6,11 @@
     --tipo_letra:'Courier New', Courier, monospace;
 }
 
+.card {
+    text-align: center;
+    min-height: 560px;
+}
+
 .img-adocion {
     width: 330px;
     height: auto;
@@ -16,6 +21,7 @@
     margin: 10px 100px;
     text-align: justify;
     font-family: var(--tipo_letra);
+    min-height: 200px;
 }
 
 #titulo {
@@ -38,7 +44,7 @@
     border: none;
     border-radius: 10px;
     padding: 5px 10px;
-    margin: 0 100px;
+    margin: 15px ;
 }
 
 img {
